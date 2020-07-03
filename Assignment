@@ -1,0 +1,68 @@
+Write a python program to create a tuple with diffrent data types
+In [ ]:
+a=("tuple", False, 3.2, 1)
+print(a)
+('tuple', False, 3.2, 1)
+Write a python program to create a tuple
+In [ ]:
+b=5, 10, 15, 20, 25
+print(b)
+(5, 10, 15, 20, 25)
+Write a python program to convert a tuple to a string
+In [ ]:
+t=('H', 'a', 'n', 'n', 'a', 'h')
+c=''.join(t)
+print(c)
+Hannah
+
+Write a python program to slice a tuple
+In [ ]:
+t=tuple("HELLO WORLD")
+print(t)
+('H', 'E', 'L', 'L', 'O', ' ', 'W', 'O', 'R', 'L', 'D')
+Write a python program to find the length of a tuple
+In [ ]:
+t=tuple("HELLO WOORLD")
+print(t)
+print("The length is:", len(t))
+('H', 'E', 'L', 'L', 'O', ' ', 'W', 'O', 'O', 'R', 'L', 'D')
+The length is: 12
+
+Write a python program to convert a tuple to dictionary
+In [ ]:
+tup1=('a', 'c', 'b')
+tup2=(1, 2, 3)
+print("The original key tuple is :" ,str(tup1)) 
+print("The original value tuple is :" ,str(tup2)) 
+res=dict(zip(tup1,tup2))
+print("Dictionary constructed from tuples:" ,str(res))
+The original key tuple is : ('a', 'c', 'b')
+The original value tuple is : (1, 2, 3)
+Dictionary constructed from tuples: {'a': 1, 'c': 2, 'b': 3}
+
+Write a python program to reverse a tuple
+In [ ]:
+a=("python")
+print("Before reverse:", a)
+t=reversed(a)
+print("after reverse", tuple(t))
+Before reverse: python
+after reverse ('n', 'o', 'h', 't', 'y', 'p')
+
+Write a python program to convert a list of tuples into a dictionary
+In [ ]:
+list1=[("Nakul",93), ("Shivansh",45), ("Samved",65), ("Yash",88), ("Vidit",70), ("Pradeep",52)] 
+a=dict() 
+for i,j in list1: 
+    a.setdefault(i, []).append(j) 
+print(a)
+{'Nakul': [93], 'Shivansh': [45], 'Samved': [65], 'Yash': [88], 'Vidit': [70], 'Pradeep': [52]}
+
+Write a python program to convert a list to a tuple
+In [ ]:
+list1=[5, 10, 7, 4, 15, 3]
+print("original list:", list1)
+t=tuple(list1)
+print("convetred to tuple:", t)
+original list: [5, 10, 7, 4, 15, 3]
+convetred to tuple: (5, 10, 7, 4, 15, 3)
